@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  font-optical-sizing: auto;
+}
+
+/* Container */
+.container {
+  @apply mx-auto px-4;
+}
+
+/* Button */
+.button {
+  @apply bg-primaryColor hover:bg-primaryColor/80 text-white text-center md:text-lg text-sm px-3 py-2 rounded-lg transition duration-300;
+}
+
+.button-white {
+  @apply bg-white hover:bg-white/80 text-textColor border-2 text-center md:text-lg text-sm px-3 py-2 rounded-lg transition duration-300;
+}
+
+/* NavItem */
+.nav-link {
+  @apply text-textColor hover:text-primaryColor transition duration-300 dark:text-white;
+}
+
+.nav-link.active {
+  @apply text-primaryColor;
+}
